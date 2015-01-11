@@ -5,38 +5,21 @@
 class BallSprite : public cocos2d::Sprite
 {
 public:
-    BallSprite() : mRunning(false), mTargetX(0), mDirection(1, 1)
-    {
-        scheduleUpdate();
-    }
-    static BallSprite* create();
-    void update	(	float 	delta);
-    void run()
-    {
-        mRunning = true;
-    }
-    void stop()
-    {
-        mRunning = false;
-    }
-    void setTargetX(float aTargetX);
-    void flipDirectionX()
-    {
-		mDirection.y = fabsf(mDirection.y);
-    }
-	//void flipDirection()
-	//{
-	//	mDirection.y = fabsf(mDirection.y);
-	//	mDirection.x = -mDirection.x;
-	//}
-	//const cocos2d::Vec2& getDirection() const
-	//{
-	//	return mDirection;
-	//}
-	
-	void bounceFrom(cocos2d::Rect aRect);
+	BallSprite() : mRunning(false), mDirection(1, 1)
+	{}
+	static BallSprite* create();
+	void update	(	float 	delta);
+	void run()
+	{
+		mRunning = true;
+	}
+	void stop()
+	{
+		mRunning = false;
+	}
+	bool bounceFrom(cocos2d::Rect aRect);
+	bool bounceInto(cocos2d::Rect aRect);
 private:
-    bool mRunning;
-    float mTargetX;
-    cocos2d::Vec2 mDirection;
+	bool mRunning;
+	cocos2d::Vec2 mDirection;
 };

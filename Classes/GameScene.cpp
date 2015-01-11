@@ -1,6 +1,5 @@
 #include "ui/UIButton.h"
 #include "GameScene.h"
-#include "Bricks.h"
 #include "VesselSprite.h"
 #include "BallSprite.h"
 USING_NS_CC;
@@ -16,7 +15,6 @@ Scene* GameScene::createScene()
 // on "init" you need to initialize your instance
 bool GameScene::init()
 {
-	// 1. super init first
 	if ( !Layer::init() )
 	{
 		return false;
@@ -25,37 +23,30 @@ bool GameScene::init()
 	Size visibleSize = Director::getInstance()->getVisibleSize();
 	Vec2 origin = Director::getInstance()->getVisibleOrigin();
 	
-	
-	
-	for (size_t i = 0; i<30; i++)
+	for (size_t i = 0; i<7; i++)
 	{
-		auto brick = Sprite::create("Brick.png");
-		brick->setPosition(Vec2(i*32, origin.y + visibleSize.height - 200));
-		addChild(brick);
-		mBricksList.push_back(brick);
+		for (size_t j = i; j<16 - i; j++)
+		{
+			auto brick = Sprite::create("Brick.png");
+			brick->setPosition(Vec2(j*32  + visibleSize.width/4, origin.y + visibleSize.height - 300 + i*32));
+			addChild(brick);
+			mBricksList.push_back(brick);
+		}
 	}
 
-	
-	
-	
-	
 	vesselSprite = VesselSprite::create();
 	vesselSprite->setPosition(Vec2(origin.x + visibleSize.width/2, origin.y  + vesselSprite->getContentSize().height/2));
 	addChild(vesselSprite);
-	
+
 	ballSprite  = BallSprite::create();
 	ballSprite->setPosition(Vec2(origin.x + visibleSize.width/2, vesselSprite->getPosition().y +  vesselSprite->getContentSize().height/2 + 100));
 	addChild(ballSprite);
-	
-	
-	scheduleUpdate();
-	
-	auto listener = EventListenerTouchOneByOne::create(); // EventListenerTouchAllAtOnce for multitouch
+
+	auto listener = EventListenerTouchOneByOne::create();
 	listener->setSwallowTouches(true);
 	listener->onTouchMoved = ([=](Touch* touch, Event* event){
 		vesselSprite->setTargetX(touch->getLocation().x);
 	});
-	
 	listener->onTouchBegan = ([=](Touch* touch, Event* event){
 		cocos2d::Vec2 p = touch->getLocation();
 		vesselSprite->setTargetX(p.x);
@@ -68,8 +59,8 @@ bool GameScene::init()
 	
 	auto dispatcher = this->getEventDispatcher();
 	dispatcher->addEventListenerWithFixedPriority(listener, 31);
-	
 	ballSprite->run();
+	this->scheduleUpdate();
 	return true;
 }
 
@@ -77,7 +68,6 @@ void GameScene::update	( float 	delta)
 {
 	static const Vec2 origin = Director::getInstance()->getVisibleOrigin();
 	if (ballSprite->getPosition().y < 5){
-		
 		Size visibleSize = Director::getInstance()->getVisibleSize();
 		Vec2 origin = Director::getInstance()->getVisibleOrigin();
 		ballSprite->stop();
@@ -93,15 +83,10 @@ void GameScene::update	( float 	delta)
 			#endif
 		});
 	}
-
-	if (ballSprite->getBoundingBox().intersectsRect(vesselSprite->getBoundingBox()))
-	{
-		ballSprite->flipDirectionX();
-	}
-	
+	ballSprite->bounceFrom(vesselSprite->getBoundingBox());
+	ballSprite->bounceInto(this->getBoundingBox());
 	checkCollisions(ballSprite->getBoundingBox());
-	
-	
+	ballSprite->update(delta);
 }
 
 
@@ -109,9 +94,8 @@ void GameScene::update	( float 	delta)
 void GameScene::checkCollisions(cocos2d::Rect aRect){
 	for (auto it = mBricksList.begin() ; it!= mBricksList.end(); it++)
 	{
-		if ((*it)->getBoundingBox().intersectsRect(aRect))
+		if (ballSprite->bounceFrom((*it)->getBoundingBox()))
 		{
-			ballSprite->bounceFrom((*it)->getBoundingBox());
 			removeChild(*it);
 			it = mBricksList.erase(it);
 			return;

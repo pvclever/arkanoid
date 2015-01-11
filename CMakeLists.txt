@@ -116,9 +116,7 @@ include_directories(
 set(GAME_SRC
   Classes/AppDelegate.cpp
   Classes/BallSprite.cpp
-  Classes/Bricks.cpp
   Classes/GameScene.cpp
-  Classes/HelloWorldScene.cpp
   Classes/VesselSprite.cpp
   ${PLATFORM_SPECIFIC_SRC}
 )
@@ -126,9 +124,7 @@ set(GAME_SRC
 set(GAME_HEADERS
   Classes/AppDelegate.h
   Classes/BallSprite.h
-  Classes/Bricks.h
   Classes/GameScene.h
-  Classes/HelloWorldScene.h
   Classes/VesselSprite.h
   ${PLATFORM_SPECIFIC_HEADERS}
 )
