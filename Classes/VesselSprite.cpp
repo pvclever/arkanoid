@@ -26,12 +26,10 @@ void VesselSprite::update	(	float 	delta)
     {
         return;
     }
-    static const float kSpeedFactor = 800;
+    static const float kSpeedFactor = 500;
     auto xpos = getPosition().x + kSpeedFactor * delta * (d>0 ? 1 : -1);
     this->setPosition(Vec2(xpos, getPosition().y));
 }
-
-
 
 void VesselSprite::setTargetX(float aTargetX)
 {

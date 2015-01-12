@@ -12,7 +12,6 @@ Scene* GameScene::createScene()
 	return scene;
 }
 
-// on "init" you need to initialize your instance
 bool GameScene::init()
 {
 	if ( !Layer::init() )
@@ -23,12 +22,12 @@ bool GameScene::init()
 	Size visibleSize = Director::getInstance()->getVisibleSize();
 	Vec2 origin = Director::getInstance()->getVisibleOrigin();
 	
-	for (size_t i = 0; i<7; i++)
+	for (size_t i = 0; i<10; i++)
 	{
-		for (size_t j = i; j<16 - i; j++)
+		for (size_t j = i; j< 20 - i - i; j++)
 		{
 			auto brick = Sprite::create("Brick.png");
-			brick->setPosition(Vec2(j*32  + visibleSize.width/4, origin.y + visibleSize.height - 300 + i*32));
+			brick->setPosition(Vec2(origin.x + j * 32 - 10*32 + visibleSize.width/2, origin.y + visibleSize.height/2 + i*32  - 70));
 			addChild(brick);
 			mBricksList.push_back(brick);
 		}
@@ -96,7 +95,14 @@ void GameScene::checkCollisions(cocos2d::Rect aRect){
 	{
 		if (ballSprite->bounceFrom((*it)->getBoundingBox()))
 		{
-			removeChild(*it);
+			auto fadeOut = FadeOut::create(1.5f);
+			auto brick = (*it);
+			auto seq = Sequence::create(
+										fadeOut,
+										([=]() { removeChild(brick); }),
+										nullptr
+									);
+			(*it)->runAction(seq);
 			it = mBricksList.erase(it);
 			return;
 		}
