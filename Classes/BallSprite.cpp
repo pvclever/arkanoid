@@ -23,7 +23,7 @@ void BallSprite::update	(	float 	delta)
 	}
 	const auto& pos = getPosition();
 	
-	static const float kSpeedFactor = 180.0f;
+	static const float kSpeedFactor = 200.0f;
 
 	this->setPosition(pos + mDirection * kSpeedFactor * delta);
 

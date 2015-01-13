@@ -20,6 +20,7 @@ private:
 	void checkCollisions(cocos2d::Rect aRect);
 	MessageHUD* mMessageHUD;
 	unsigned int mScore;
+	cocos2d::EventListenerTouchOneByOne* mListener;
 	GameScene() : mScore(0)
 	{
 	}

@@ -7,8 +7,8 @@ class VesselSprite : public cocos2d::Sprite
 public:
     VesselSprite() : mRunning(false), mTargetX(0)
     {
-        scheduleUpdate();
-    }
+		scheduleUpdate();
+	}
     static VesselSprite* create();
     void update	(	float 	delta);
     void run()

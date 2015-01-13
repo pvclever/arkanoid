@@ -6,7 +6,9 @@ class BallSprite : public cocos2d::Sprite
 {
 public:
 	BallSprite() : mRunning(false), mDirection(1, 1)
-	{}
+	{
+		this->scheduleUpdate();
+	}
 	static BallSprite* create();
 	void update	(	float 	delta);
 	void run()

@@ -19,7 +19,6 @@ bool GameScene::init()
 	{
 		return false;
 	}
-	
 	Size visibleSize = Director::getInstance()->getVisibleSize();
 	Vec2 origin = Director::getInstance()->getVisibleOrigin();
 	
@@ -43,23 +42,24 @@ bool GameScene::init()
 	mBallSprite->setPosition(Vec2(origin.x + visibleSize.width/2, mVesselSprite->getPosition().y +  mVesselSprite->getContentSize().height/2 + 100));
 	addChild(mBallSprite);
 	
-	auto listener = EventListenerTouchOneByOne::create();
-	listener->setSwallowTouches(true);
-	listener->onTouchMoved = ([=](Touch* touch, Event* event){
+	mListener = EventListenerTouchOneByOne::create();
+	
+	mListener->onTouchMoved = ([this](Touch* touch, Event* event){
+		
 		mVesselSprite->setTargetX(touch->getLocation().x);
 	});
-	listener->onTouchBegan = ([=](Touch* touch, Event* event){
+	mListener->onTouchBegan = ([this](Touch* touch, Event* event){
 		cocos2d::Vec2 p = touch->getLocation();
 		mVesselSprite->setTargetX(p.x);
 		mVesselSprite->run();
 		return true;
 	});
-	listener->onTouchEnded = ([=](Touch* touch, Event* event){
+	mListener->onTouchEnded = ([this](Touch* touch, Event* event){
 		mVesselSprite->stop();
 	});
 	
 	auto dispatcher = this->getEventDispatcher();
-	dispatcher->addEventListenerWithFixedPriority(listener, 31);
+	dispatcher->addEventListenerWithFixedPriority(mListener, 31);
 	mBallSprite->run();
 	this->scheduleUpdate();
 	
@@ -84,17 +84,15 @@ void GameScene::update	( float 	delta)
 		button->setTitleText("GAME OVER");
 		button->setPosition(Vec2(origin.x + visibleSize.width/2 , origin.x + visibleSize.height/2));
 		addChild(button);
-		button->addClickEventListener([=](Ref* pSender){
-			Director::getInstance()->end();
-#if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
-			exit(0);
-#endif
+		button->addClickEventListener([&](Ref* pSender){
+			auto dispatcher = this->getEventDispatcher();
+			dispatcher->removeEventListener(mListener);
+			Director::getInstance()->replaceScene(GameScene::createScene());
 		});
 	}
 	mBallSprite->bounceFrom(mVesselSprite->getBoundingBox());
 	mBallSprite->bounceInto(this->getBoundingBox());
 	checkCollisions(mBallSprite->getBoundingBox());
-	mBallSprite->update(delta);
 }
 
 

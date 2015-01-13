@@ -18,13 +18,14 @@ VesselSprite* VesselSprite::create()
 void VesselSprite::update	(	float 	delta)
 {
     if (!mRunning)
-    {
-        return;
+	{
+		return;
     }
+	
     float d = mTargetX - getPosition().x;
     if (fabs(d) < 10)
     {
-        return;
+       return;
     }
     static const float kSpeedFactor = 500;
     auto xpos = getPosition().x + kSpeedFactor * delta * (d>0 ? 1 : -1);
@@ -33,5 +34,6 @@ void VesselSprite::update	(	float 	delta)
 
 void VesselSprite::setTargetX(float aTargetX)
 {
+	///CCLOG("set target %f", aTargetX);
     mTargetX = aTargetX;
 }
