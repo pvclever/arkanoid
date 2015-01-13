@@ -2,6 +2,7 @@
 #include "GameScene.h"
 #include "VesselSprite.h"
 #include "BallSprite.h"
+#include "MessageHUD.h"
 USING_NS_CC;
 
 Scene* GameScene::createScene()
@@ -22,6 +23,7 @@ bool GameScene::init()
 	Size visibleSize = Director::getInstance()->getVisibleSize();
 	Vec2 origin = Director::getInstance()->getVisibleOrigin();
 	
+	
 	for (size_t i = 0; i<10; i++)
 	{
 		for (size_t j = i; j< 20 - i - i; j++)
@@ -32,44 +34,51 @@ bool GameScene::init()
 			mBricksList.push_back(brick);
 		}
 	}
-
-	vesselSprite = VesselSprite::create();
-	vesselSprite->setPosition(Vec2(origin.x + visibleSize.width/2, origin.y  + vesselSprite->getContentSize().height/2));
-	addChild(vesselSprite);
-
-	ballSprite  = BallSprite::create();
-	ballSprite->setPosition(Vec2(origin.x + visibleSize.width/2, vesselSprite->getPosition().y +  vesselSprite->getContentSize().height/2 + 100));
-	addChild(ballSprite);
-
+	
+	mVesselSprite = VesselSprite::create();
+	mVesselSprite->setPosition(Vec2(origin.x + visibleSize.width/2, origin.y  + mVesselSprite->getContentSize().height/2));
+	addChild(mVesselSprite);
+	
+	mBallSprite  = BallSprite::create();
+	mBallSprite->setPosition(Vec2(origin.x + visibleSize.width/2, mVesselSprite->getPosition().y +  mVesselSprite->getContentSize().height/2 + 100));
+	addChild(mBallSprite);
+	
 	auto listener = EventListenerTouchOneByOne::create();
 	listener->setSwallowTouches(true);
 	listener->onTouchMoved = ([=](Touch* touch, Event* event){
-		vesselSprite->setTargetX(touch->getLocation().x);
+		mVesselSprite->setTargetX(touch->getLocation().x);
 	});
 	listener->onTouchBegan = ([=](Touch* touch, Event* event){
 		cocos2d::Vec2 p = touch->getLocation();
-		vesselSprite->setTargetX(p.x);
-		vesselSprite->run();
+		mVesselSprite->setTargetX(p.x);
+		mVesselSprite->run();
 		return true;
 	});
 	listener->onTouchEnded = ([=](Touch* touch, Event* event){
-		vesselSprite->stop();
+		mVesselSprite->stop();
 	});
 	
 	auto dispatcher = this->getEventDispatcher();
 	dispatcher->addEventListenerWithFixedPriority(listener, 31);
-	ballSprite->run();
+	mBallSprite->run();
 	this->scheduleUpdate();
+	
+	
+	mMessageHUD = MessageHUD::createLayer();
+	mMessageHUD->setPosition(Vec2(0,  origin.y + visibleSize.height));
+	addChild(mMessageHUD, 2);
+	
+	
 	return true;
 }
 
 void GameScene::update	( float 	delta)
 {
 	static const Vec2 origin = Director::getInstance()->getVisibleOrigin();
-	if (ballSprite->getPosition().y < 5){
+	if (mBallSprite->getPosition().y < 5){
 		Size visibleSize = Director::getInstance()->getVisibleSize();
 		Vec2 origin = Director::getInstance()->getVisibleOrigin();
-		ballSprite->stop();
+		mBallSprite->stop();
 		auto button = cocos2d::ui::Button::create();
 		button->setTitleFontSize(50);
 		button->setTitleText("GAME OVER");
@@ -77,15 +86,15 @@ void GameScene::update	( float 	delta)
 		addChild(button);
 		button->addClickEventListener([=](Ref* pSender){
 			Director::getInstance()->end();
-			#if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
+#if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
 			exit(0);
-			#endif
+#endif
 		});
 	}
-	ballSprite->bounceFrom(vesselSprite->getBoundingBox());
-	ballSprite->bounceInto(this->getBoundingBox());
-	checkCollisions(ballSprite->getBoundingBox());
-	ballSprite->update(delta);
+	mBallSprite->bounceFrom(mVesselSprite->getBoundingBox());
+	mBallSprite->bounceInto(this->getBoundingBox());
+	checkCollisions(mBallSprite->getBoundingBox());
+	mBallSprite->update(delta);
 }
 
 
@@ -93,19 +102,24 @@ void GameScene::update	( float 	delta)
 void GameScene::checkCollisions(cocos2d::Rect aRect){
 	for (auto it = mBricksList.begin() ; it!= mBricksList.end(); it++)
 	{
-		if (ballSprite->bounceFrom((*it)->getBoundingBox()))
+		if (mBallSprite->bounceFrom((*it)->getBoundingBox()))
 		{
 			auto fadeOut = FadeOut::create(1.5f);
 			auto brick = (*it);
 			auto seq = Sequence::create(
 										fadeOut,
-										([=]() { removeChild(brick); }),
+										(CallFunc::create([=]() {
+				removeChild(brick);
+				
+			})),
 										nullptr
-									);
+										);
 			(*it)->runAction(seq);
 			it = mBricksList.erase(it);
+			mScore++;
+			mMessageHUD->setScore(mScore);
 			return;
 		}
-	 }
+	}
 	
 }

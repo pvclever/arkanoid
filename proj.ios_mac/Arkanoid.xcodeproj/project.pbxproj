@@ -12,12 +12,6 @@
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
-		3EACC98F19EE6D4300EB3C5E /* res in Resources */ = {isa = PBXBuildFile; fileRef = 3EACC98E19EE6D4300EB3C5E /* res */; };
-		3EACC99019EE6D4300EB3C5E /* res in Resources */ = {isa = PBXBuildFile; fileRef = 3EACC98E19EE6D4300EB3C5E /* res */; };
-		46880B7B19C43A67006E1F66 /* CloseNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = 46880B7619C43A67006E1F66 /* CloseNormal.png */; };
-		46880B7C19C43A67006E1F66 /* CloseNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = 46880B7619C43A67006E1F66 /* CloseNormal.png */; };
-		46880B7D19C43A67006E1F66 /* CloseSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = 46880B7719C43A67006E1F66 /* CloseSelected.png */; };
-		46880B7E19C43A67006E1F66 /* CloseSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = 46880B7719C43A67006E1F66 /* CloseSelected.png */; };
 		46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 46880B8419C43A87006E1F66 /* AppDelegate.cpp */; };
 		46880B8919C43A87006E1F66 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 46880B8419C43A87006E1F66 /* AppDelegate.cpp */; };
 		503AE0F817EB97AB00D1A890 /* Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 503AE0F617EB97AB00D1A890 /* Icon.icns */; };
@@ -53,20 +47,28 @@
 		50EF62A317ECD613001EB2F8 /* Icon-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 50EF62A117ECD613001EB2F8 /* Icon-50.png */; };
 		521A8E6419F0C34300D177D7 /* Default-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 521A8E6219F0C34300D177D7 /* Default-667h@2x.png */; };
 		521A8E6519F0C34300D177D7 /* Default-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 521A8E6319F0C34300D177D7 /* Default-736h@3x.png */; };
-		521A8EA919F11F5000D177D7 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 521A8EA819F11F5000D177D7 /* fonts */; };
-		521A8EAA19F11F5000D177D7 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 521A8EA819F11F5000D177D7 /* fonts */; };
 		804346ED1A5ECF030026B874 /* VesselSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 804346EB1A5ECF030026B874 /* VesselSprite.cpp */; };
 		804346EE1A5ECF030026B874 /* VesselSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 804346EB1A5ECF030026B874 /* VesselSprite.cpp */; };
-		804346F01A5ED24B0026B874 /* vessel.png in Resources */ = {isa = PBXBuildFile; fileRef = 804346EF1A5ED24B0026B874 /* vessel.png */; };
-		804346F11A5ED24B0026B874 /* vessel.png in Resources */ = {isa = PBXBuildFile; fileRef = 804346EF1A5ED24B0026B874 /* vessel.png */; };
 		804346F61A5EED380026B874 /* BallSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 804346F41A5EED380026B874 /* BallSprite.cpp */; };
 		804346F71A5EED380026B874 /* BallSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 804346F41A5EED380026B874 /* BallSprite.cpp */; };
-		804346F91A5EEE860026B874 /* ball.png in Resources */ = {isa = PBXBuildFile; fileRef = 804346F81A5EEE860026B874 /* ball.png */; };
-		804346FA1A5EEE860026B874 /* ball.png in Resources */ = {isa = PBXBuildFile; fileRef = 804346F81A5EEE860026B874 /* ball.png */; };
 		80BCF52E1A5E9258000FA1C9 /* GameScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 80BCF52C1A5E9258000FA1C9 /* GameScene.cpp */; };
 		80BCF52F1A5E9258000FA1C9 /* GameScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 80BCF52C1A5E9258000FA1C9 /* GameScene.cpp */; };
-		80FE366E1A5FFCE20000243F /* Brick.png in Resources */ = {isa = PBXBuildFile; fileRef = 80FE366D1A5FFCE20000243F /* Brick.png */; };
-		80FE366F1A5FFCE20000243F /* Brick.png in Resources */ = {isa = PBXBuildFile; fileRef = 80FE366D1A5FFCE20000243F /* Brick.png */; };
+		80DF9D6B1A653A47007E75CD /* MessageHUD.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 80DF9D691A653A47007E75CD /* MessageHUD.cpp */; };
+		80DF9D6C1A653A47007E75CD /* MessageHUD.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 80DF9D691A653A47007E75CD /* MessageHUD.cpp */; };
+		80DFC6811A65455C007E75CD /* ball.png in Resources */ = {isa = PBXBuildFile; fileRef = 80DFC6781A65455C007E75CD /* ball.png */; };
+		80DFC6821A65455C007E75CD /* ball.png in Resources */ = {isa = PBXBuildFile; fileRef = 80DFC6781A65455C007E75CD /* ball.png */; };
+		80DFC6831A65455C007E75CD /* Brick.png in Resources */ = {isa = PBXBuildFile; fileRef = 80DFC6791A65455C007E75CD /* Brick.png */; };
+		80DFC6841A65455C007E75CD /* Brick.png in Resources */ = {isa = PBXBuildFile; fileRef = 80DFC6791A65455C007E75CD /* Brick.png */; };
+		80DFC6851A65455C007E75CD /* CloseNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = 80DFC67A1A65455C007E75CD /* CloseNormal.png */; };
+		80DFC6861A65455C007E75CD /* CloseNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = 80DFC67A1A65455C007E75CD /* CloseNormal.png */; };
+		80DFC6871A65455C007E75CD /* CloseSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = 80DFC67B1A65455C007E75CD /* CloseSelected.png */; };
+		80DFC6881A65455C007E75CD /* CloseSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = 80DFC67B1A65455C007E75CD /* CloseSelected.png */; };
+		80DFC6891A65455C007E75CD /* Marker Felt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 80DFC67D1A65455C007E75CD /* Marker Felt.ttf */; };
+		80DFC68A1A65455C007E75CD /* Marker Felt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 80DFC67D1A65455C007E75CD /* Marker Felt.ttf */; };
+		80DFC68B1A65455C007E75CD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 80DFC67F1A65455C007E75CD /* .gitkeep */; };
+		80DFC68C1A65455C007E75CD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 80DFC67F1A65455C007E75CD /* .gitkeep */; };
+		80DFC68D1A65455C007E75CD /* vessel.png in Resources */ = {isa = PBXBuildFile; fileRef = 80DFC6801A65455C007E75CD /* vessel.png */; };
+		80DFC68E1A65455C007E75CD /* vessel.png in Resources */ = {isa = PBXBuildFile; fileRef = 80DFC6801A65455C007E75CD /* vessel.png */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
 		BF1C47F01293687400B63C5D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1C47EA1293683800B63C5D /* QuartzCore.framework */; };
@@ -91,20 +93,6 @@
 			remoteGlobalIDString = A07A4D641783777C0073F6A7;
 			remoteInfo = "cocos2dx iOS";
 		};
-		1AC6FB15180E9959004C840B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 1551A33E158F2AB200E66CFE;
-			remoteInfo = "cocos2dx Mac";
-		};
-		1AC6FB24180E99E1004C840B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = A07A4C241783777C0073F6A7;
-			remoteInfo = "cocos2dx iOS";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -114,9 +102,6 @@
 		1D6058910D05DD3D006BFB54 /* Arkanoid iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Arkanoid iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		3EACC98E19EE6D4300EB3C5E /* res */ = {isa = PBXFileReference; lastKnownFileType = folder; path = res; sourceTree = "<group>"; };
-		46880B7619C43A67006E1F66 /* CloseNormal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CloseNormal.png; sourceTree = "<group>"; };
-		46880B7719C43A67006E1F66 /* CloseSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CloseSelected.png; sourceTree = "<group>"; };
 		46880B8419C43A87006E1F66 /* AppDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AppDelegate.cpp; sourceTree = "<group>"; };
 		46880B8519C43A87006E1F66 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		503AE0F617EB97AB00D1A890 /* Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Icon.icns; sourceTree = "<group>"; };
@@ -153,16 +138,21 @@
 		50EF62A117ECD613001EB2F8 /* Icon-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-50.png"; sourceTree = "<group>"; };
 		521A8E6219F0C34300D177D7 /* Default-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-667h@2x.png"; sourceTree = "<group>"; };
 		521A8E6319F0C34300D177D7 /* Default-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-736h@3x.png"; sourceTree = "<group>"; };
-		521A8EA819F11F5000D177D7 /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fonts; sourceTree = "<group>"; };
 		804346EB1A5ECF030026B874 /* VesselSprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VesselSprite.cpp; sourceTree = "<group>"; };
 		804346EC1A5ECF030026B874 /* VesselSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VesselSprite.h; sourceTree = "<group>"; };
-		804346EF1A5ED24B0026B874 /* vessel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vessel.png; sourceTree = "<group>"; };
 		804346F41A5EED380026B874 /* BallSprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BallSprite.cpp; sourceTree = "<group>"; };
 		804346F51A5EED380026B874 /* BallSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BallSprite.h; sourceTree = "<group>"; };
-		804346F81A5EEE860026B874 /* ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball.png; sourceTree = "<group>"; };
 		80BCF52C1A5E9258000FA1C9 /* GameScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameScene.cpp; sourceTree = "<group>"; };
 		80BCF52D1A5E9258000FA1C9 /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
-		80FE366D1A5FFCE20000243F /* Brick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Brick.png; sourceTree = "<group>"; };
+		80DF9D691A653A47007E75CD /* MessageHUD.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MessageHUD.cpp; sourceTree = "<group>"; };
+		80DF9D6A1A653A47007E75CD /* MessageHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageHUD.h; sourceTree = "<group>"; };
+		80DFC6781A65455C007E75CD /* ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball.png; sourceTree = "<group>"; };
+		80DFC6791A65455C007E75CD /* Brick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Brick.png; sourceTree = "<group>"; };
+		80DFC67A1A65455C007E75CD /* CloseNormal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CloseNormal.png; sourceTree = "<group>"; };
+		80DFC67B1A65455C007E75CD /* CloseSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CloseSelected.png; sourceTree = "<group>"; };
+		80DFC67D1A65455C007E75CD /* Marker Felt.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Marker Felt.ttf"; sourceTree = "<group>"; };
+		80DFC67F1A65455C007E75CD /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		80DFC6801A65455C007E75CD /* vessel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vessel.png; sourceTree = "<group>"; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		BF1C47EA1293683800B63C5D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -249,7 +239,6 @@
 			isa = PBXGroup;
 			children = (
 				46880B8319C43A87006E1F66 /* Classes */,
-				46880B7519C43A67006E1F66 /* Resources */,
 				1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				080E96DDFE201D6D7F000001 /* ios */,
@@ -281,25 +270,12 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		46880B7519C43A67006E1F66 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				804346F81A5EEE860026B874 /* ball.png */,
-				80FE366D1A5FFCE20000243F /* Brick.png */,
-				521A8EA819F11F5000D177D7 /* fonts */,
-				3EACC98E19EE6D4300EB3C5E /* res */,
-				46880B7619C43A67006E1F66 /* CloseNormal.png */,
-				804346EF1A5ED24B0026B874 /* vessel.png */,
-				46880B7719C43A67006E1F66 /* CloseSelected.png */,
-			);
-			name = Resources;
-			path = ../Resources;
-			sourceTree = "<group>";
-		};
 		46880B8319C43A87006E1F66 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
 				46880B8419C43A87006E1F66 /* AppDelegate.cpp */,
+				80DF9D691A653A47007E75CD /* MessageHUD.cpp */,
+				80DF9D6A1A653A47007E75CD /* MessageHUD.h */,
 				46880B8519C43A87006E1F66 /* AppDelegate.h */,
 				80BCF52C1A5E9258000FA1C9 /* GameScene.cpp */,
 				80BCF52D1A5E9258000FA1C9 /* GameScene.h */,
@@ -307,6 +283,7 @@
 				804346EC1A5ECF030026B874 /* VesselSprite.h */,
 				804346F41A5EED380026B874 /* BallSprite.cpp */,
 				804346F51A5EED380026B874 /* BallSprite.h */,
+				80DFC6771A65455C007E75CD /* Resources */,
 			);
 			name = Classes;
 			path = ../Classes;
@@ -359,6 +336,37 @@
 			path = ios;
 			sourceTree = SOURCE_ROOT;
 		};
+		80DFC6771A65455C007E75CD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				80DFC6781A65455C007E75CD /* ball.png */,
+				80DFC6791A65455C007E75CD /* Brick.png */,
+				80DFC67A1A65455C007E75CD /* CloseNormal.png */,
+				80DFC67B1A65455C007E75CD /* CloseSelected.png */,
+				80DFC67C1A65455C007E75CD /* fonts */,
+				80DFC67E1A65455C007E75CD /* res */,
+				80DFC6801A65455C007E75CD /* vessel.png */,
+			);
+			name = Resources;
+			path = ../Resources;
+			sourceTree = "<group>";
+		};
+		80DFC67C1A65455C007E75CD /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				80DFC67D1A65455C007E75CD /* Marker Felt.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		80DFC67E1A65455C007E75CD /* res */ = {
+			isa = PBXGroup;
+			children = (
+				80DFC67F1A65455C007E75CD /* .gitkeep */,
+			);
+			path = res;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -373,7 +381,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				1AC6FB25180E99E1004C840B /* PBXTargetDependency */,
 			);
 			name = "Arkanoid iOS";
 			productName = iphone;
@@ -391,7 +398,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				1AC6FB16180E9959004C840B /* PBXTargetDependency */,
 			);
 			name = "Arkanoid Mac";
 			productName = iphone;
@@ -460,30 +466,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				5087E78117EB970100C73F5D /* Icon-120.png in Resources */,
-				804346F91A5EEE860026B874 /* ball.png in Resources */,
+				80DFC6811A65455C007E75CD /* ball.png in Resources */,
 				5087E78617EB970100C73F5D /* Icon-76.png in Resources */,
 				5087E77F17EB970100C73F5D /* Default@2x.png in Resources */,
+				80DFC68D1A65455C007E75CD /* vessel.png in Resources */,
 				50EF629917ECD46A001EB2F8 /* Icon-100.png in Resources */,
 				5087E78317EB970100C73F5D /* Icon-152.png in Resources */,
-				80FE366E1A5FFCE20000243F /* Brick.png in Resources */,
-				46880B7D19C43A67006E1F66 /* CloseSelected.png in Resources */,
+				80DFC6851A65455C007E75CD /* CloseNormal.png in Resources */,
+				80DFC6891A65455C007E75CD /* Marker Felt.ttf in Resources */,
+				80DFC6831A65455C007E75CD /* Brick.png in Resources */,
 				5087E77D17EB970100C73F5D /* Default-568h@2x.png in Resources */,
 				5087E78517EB970100C73F5D /* Icon-72.png in Resources */,
 				521A8E6519F0C34300D177D7 /* Default-736h@3x.png in Resources */,
-				521A8EA919F11F5000D177D7 /* fonts in Resources */,
 				50EF62A317ECD613001EB2F8 /* Icon-50.png in Resources */,
 				5087E78017EB970100C73F5D /* Icon-114.png in Resources */,
-				804346F01A5ED24B0026B874 /* vessel.png in Resources */,
 				50EF62A217ECD613001EB2F8 /* Icon-29.png in Resources */,
 				50EF629617ECD46A001EB2F8 /* Icon-40.png in Resources */,
 				5087E78217EB970100C73F5D /* Icon-144.png in Resources */,
-				3EACC98F19EE6D4300EB3C5E /* res in Resources */,
 				50EF629817ECD46A001EB2F8 /* Icon-80.png in Resources */,
 				5087E78417EB970100C73F5D /* Icon-57.png in Resources */,
 				5087E77E17EB970100C73F5D /* Default.png in Resources */,
 				521A8E6419F0C34300D177D7 /* Default-667h@2x.png in Resources */,
-				46880B7B19C43A67006E1F66 /* CloseNormal.png in Resources */,
+				80DFC68B1A65455C007E75CD /* .gitkeep in Resources */,
 				50EF629717ECD46A001EB2F8 /* Icon-58.png in Resources */,
+				80DFC6871A65455C007E75CD /* CloseSelected.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,14 +497,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80FE366F1A5FFCE20000243F /* Brick.png in Resources */,
+				80DFC6841A65455C007E75CD /* Brick.png in Resources */,
+				80DFC6881A65455C007E75CD /* CloseSelected.png in Resources */,
 				503AE0F817EB97AB00D1A890 /* Icon.icns in Resources */,
-				3EACC99019EE6D4300EB3C5E /* res in Resources */,
-				521A8EAA19F11F5000D177D7 /* fonts in Resources */,
-				46880B7C19C43A67006E1F66 /* CloseNormal.png in Resources */,
-				46880B7E19C43A67006E1F66 /* CloseSelected.png in Resources */,
-				804346FA1A5EEE860026B874 /* ball.png in Resources */,
-				804346F11A5ED24B0026B874 /* vessel.png in Resources */,
+				80DFC68A1A65455C007E75CD /* Marker Felt.ttf in Resources */,
+				80DFC68C1A65455C007E75CD /* .gitkeep in Resources */,
+				80DFC6861A65455C007E75CD /* CloseNormal.png in Resources */,
+				80DFC6821A65455C007E75CD /* ball.png in Resources */,
+				80DFC68E1A65455C007E75CD /* vessel.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,6 +520,7 @@
 				804346ED1A5ECF030026B874 /* VesselSprite.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
+				80DF9D6B1A653A47007E75CD /* MessageHUD.cpp in Sources */,
 				80BCF52E1A5E9258000FA1C9 /* GameScene.cpp in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
 			);
@@ -528,23 +535,11 @@
 				503AE10517EB98FF00D1A890 /* main.cpp in Sources */,
 				80BCF52F1A5E9258000FA1C9 /* GameScene.cpp in Sources */,
 				804346EE1A5ECF030026B874 /* VesselSprite.cpp in Sources */,
+				80DF9D6C1A653A47007E75CD /* MessageHUD.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		1AC6FB16180E9959004C840B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "cocos2dx Mac";
-			targetProxy = 1AC6FB15180E9959004C840B /* PBXContainerItemProxy */;
-		};
-		1AC6FB25180E99E1004C840B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "cocos2dx iOS";
-			targetProxy = 1AC6FB24180E99E1004C840B /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		1D6058940D05DD3E006BFB54 /* Debug */ = {
@@ -553,6 +548,11 @@
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/plugin/plugins/facebook/proj.ios/sdk,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/plugin/plugins/facebookads/proj.ios,
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -571,7 +571,154 @@
 				);
 				INFOPLIST_FILE = ios/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = (
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/chipmunk/prebuilt/android/armeabi,
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/chipmunk/prebuilt/android/armeabi-v7a",
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/chipmunk/prebuilt/android/x86,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/chipmunk/prebuilt/ios,
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/chipmunk/prebuilt/linux/32-bit",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/chipmunk/prebuilt/linux/64-bit",
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/chipmunk/prebuilt/mac,
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/chipmunk/prebuilt/win32/debug-lib",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/chipmunk/prebuilt/win32/release-lib",
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/chipmunk/prebuilt/winrt_8.1/arm,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/chipmunk/prebuilt/winrt_8.1/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/chipmunk/prebuilt/wp8/ARM,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/chipmunk/prebuilt/wp8/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/chipmunk/prebuilt/wp_8.1/arm,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/chipmunk/prebuilt/wp_8.1/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/curl/prebuilt/android/armeabi,
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/curl/prebuilt/android/armeabi-v7a",
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/curl/prebuilt/android/x86,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/curl/prebuilt/ios,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/curl/prebuilt/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/curl/prebuilt/winrt_8.1/arm,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/curl/prebuilt/winrt_8.1/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/curl/prebuilt/wp8/arm,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/curl/prebuilt/wp8/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/curl/prebuilt/wp_8.1/arm,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/curl/prebuilt/wp_8.1/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/freetype2/prebuilt/android/armeabi,
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/freetype2/prebuilt/android/armeabi-v7a",
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/freetype2/prebuilt/android/x86,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/freetype2/prebuilt/ios,
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/freetype2/prebuilt/linux/32-bit",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/freetype2/prebuilt/linux/64-bit",
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/freetype2/prebuilt/mac,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/freetype2/prebuilt/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/freetype2/prebuilt/winrt/ARM,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/freetype2/prebuilt/winrt/Win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/freetype2/prebuilt/winrt_8.1/arm,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/freetype2/prebuilt/winrt_8.1/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/freetype2/prebuilt/wp8/ARM,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/freetype2/prebuilt/wp8/Win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/freetype2/prebuilt/wp_8.1/arm,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/freetype2/prebuilt/wp_8.1/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/glfw3/prebuilt/mac,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/glfw3/prebuilt/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/jpeg/prebuilt/android/armeabi,
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/jpeg/prebuilt/android/armeabi-v7a",
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/jpeg/prebuilt/android/x86,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/jpeg/prebuilt/ios,
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/jpeg/prebuilt/linux/32-bit",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/jpeg/prebuilt/linux/64-bit",
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/jpeg/prebuilt/mac,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/jpeg/prebuilt/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/jpeg/prebuilt/winrt/ARM,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/jpeg/prebuilt/winrt/Win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/jpeg/prebuilt/winrt_8.1/arm,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/jpeg/prebuilt/winrt_8.1/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/jpeg/prebuilt/wp8/ARM,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/jpeg/prebuilt/wp8/Win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/jpeg/prebuilt/wp_8.1/arm,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/jpeg/prebuilt/wp_8.1/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/png/prebuilt/android/armeabi,
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/png/prebuilt/android/armeabi-v7a",
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/png/prebuilt/android/x86,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/png/prebuilt/ios,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/png/prebuilt/mac,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/png/prebuilt/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/png/prebuilt/winrt/ARM,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/png/prebuilt/winrt/Win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/png/prebuilt/winrt_8.1/arm,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/png/prebuilt/winrt_8.1/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/png/prebuilt/wp8/ARM,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/png/prebuilt/wp8/Win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/png/prebuilt/wp_8.1/arm,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/png/prebuilt/wp_8.1/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/sqlite3/libraries/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/sqlite3/libraries/winrt_8.1/arm,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/sqlite3/libraries/winrt_8.1/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/sqlite3/libraries/wp8/arm,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/sqlite3/libraries/wp8/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/sqlite3/libraries/wp_8.1/arm,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/sqlite3/libraries/wp_8.1/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/tiff/prebuilt/android/armeabi,
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/tiff/prebuilt/android/armeabi-v7a",
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/tiff/prebuilt/android/x86,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/tiff/prebuilt/ios,
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/tiff/prebuilt/linux/32-bit",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/tiff/prebuilt/linux/64-bit",
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/tiff/prebuilt/mac,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/tiff/prebuilt/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/tiff/prebuilt/winrt/ARM,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/tiff/prebuilt/winrt/Win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/tiff/prebuilt/winrt_8.1/arm,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/tiff/prebuilt/winrt_8.1/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/tiff/prebuilt/wp8/ARM,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/tiff/prebuilt/wp8/Win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/tiff/prebuilt/wp_8.1/arm,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/tiff/prebuilt/wp_8.1/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/webp/prebuilt/android/armeabi,
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/webp/prebuilt/android/armeabi-v7a",
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/webp/prebuilt/android/x86,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/webp/prebuilt/ios,
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/webp/prebuilt/linux/32-bit",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/webp/prebuilt/linux/64-bit",
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/webp/prebuilt/mac,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/webp/prebuilt/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/websockets/prebuilt/android/armeabi,
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/websockets/prebuilt/android/armeabi-v7a",
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/websockets/prebuilt/android/x86,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/websockets/prebuilt/ios,
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/websockets/prebuilt/linux/32-bit",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/websockets/prebuilt/linux/64-bit",
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/websockets/prebuilt/mac,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/websockets/prebuilt/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/websockets/prebuilt/winrt_8.1/arm,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/websockets/prebuilt/winrt_8.1/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/websockets/prebuilt/wp8/arm,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/websockets/prebuilt/wp8/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/websockets/prebuilt/wp_8.1/arm,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/websockets/prebuilt/wp_8.1/win32,
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/win32-specific/gles/prebuilt",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/win32-specific/icon/prebuilt",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/win32-specific/MP3Decoder/prebuilt",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/win32-specific/OggDecoder/prebuilt",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/win32-specific/OpenalSoft/prebuilt",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/win32-specific/zlib/prebuilt",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/winrt-specific/angle/prebuilt/ARM",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/winrt-specific/angle/prebuilt/Win32",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/winrt-specific/zlib/prebuilt/ARM",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/winrt-specific/zlib/prebuilt/Win32",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/winrt_8.1-specific/angle/prebuilt/arm",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/winrt_8.1-specific/angle/prebuilt/win32",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/winrt_8.1-specific/zlib/prebuilt/arm",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/winrt_8.1-specific/zlib/prebuilt/win32",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/wp8-specific/angle/prebuilt/ARM",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/wp8-specific/angle/prebuilt/Win32",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/wp8-specific/zlib/prebuilt/ARM",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/wp8-specific/zlib/prebuilt/Win32",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/wp_8.1-specific/angle/prebuilt/arm",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/wp_8.1-specific/angle/prebuilt/win32",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/wp_8.1-specific/zlib/prebuilt/arm",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/wp_8.1-specific/zlib/prebuilt/win32",
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/plugin/plugins/admob/proj.ios/Admob,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/plugin/plugins/flurry/proj.ios/FlurryAds,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/plugin/plugins/flurry/proj.ios,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/plugin/plugins/umeng/proj.ios,
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/tools/fbx-conv/mac",
+				);
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "";
@@ -585,6 +732,11 @@
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/plugin/plugins/facebook/proj.ios/sdk,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/plugin/plugins/facebookads/proj.ios,
+				);
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = ios/Prefix.pch;
@@ -601,7 +753,154 @@
 				);
 				INFOPLIST_FILE = ios/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = (
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/chipmunk/prebuilt/android/armeabi,
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/chipmunk/prebuilt/android/armeabi-v7a",
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/chipmunk/prebuilt/android/x86,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/chipmunk/prebuilt/ios,
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/chipmunk/prebuilt/linux/32-bit",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/chipmunk/prebuilt/linux/64-bit",
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/chipmunk/prebuilt/mac,
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/chipmunk/prebuilt/win32/debug-lib",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/chipmunk/prebuilt/win32/release-lib",
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/chipmunk/prebuilt/winrt_8.1/arm,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/chipmunk/prebuilt/winrt_8.1/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/chipmunk/prebuilt/wp8/ARM,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/chipmunk/prebuilt/wp8/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/chipmunk/prebuilt/wp_8.1/arm,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/chipmunk/prebuilt/wp_8.1/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/curl/prebuilt/android/armeabi,
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/curl/prebuilt/android/armeabi-v7a",
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/curl/prebuilt/android/x86,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/curl/prebuilt/ios,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/curl/prebuilt/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/curl/prebuilt/winrt_8.1/arm,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/curl/prebuilt/winrt_8.1/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/curl/prebuilt/wp8/arm,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/curl/prebuilt/wp8/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/curl/prebuilt/wp_8.1/arm,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/curl/prebuilt/wp_8.1/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/freetype2/prebuilt/android/armeabi,
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/freetype2/prebuilt/android/armeabi-v7a",
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/freetype2/prebuilt/android/x86,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/freetype2/prebuilt/ios,
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/freetype2/prebuilt/linux/32-bit",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/freetype2/prebuilt/linux/64-bit",
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/freetype2/prebuilt/mac,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/freetype2/prebuilt/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/freetype2/prebuilt/winrt/ARM,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/freetype2/prebuilt/winrt/Win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/freetype2/prebuilt/winrt_8.1/arm,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/freetype2/prebuilt/winrt_8.1/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/freetype2/prebuilt/wp8/ARM,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/freetype2/prebuilt/wp8/Win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/freetype2/prebuilt/wp_8.1/arm,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/freetype2/prebuilt/wp_8.1/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/glfw3/prebuilt/mac,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/glfw3/prebuilt/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/jpeg/prebuilt/android/armeabi,
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/jpeg/prebuilt/android/armeabi-v7a",
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/jpeg/prebuilt/android/x86,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/jpeg/prebuilt/ios,
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/jpeg/prebuilt/linux/32-bit",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/jpeg/prebuilt/linux/64-bit",
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/jpeg/prebuilt/mac,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/jpeg/prebuilt/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/jpeg/prebuilt/winrt/ARM,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/jpeg/prebuilt/winrt/Win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/jpeg/prebuilt/winrt_8.1/arm,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/jpeg/prebuilt/winrt_8.1/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/jpeg/prebuilt/wp8/ARM,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/jpeg/prebuilt/wp8/Win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/jpeg/prebuilt/wp_8.1/arm,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/jpeg/prebuilt/wp_8.1/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/png/prebuilt/android/armeabi,
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/png/prebuilt/android/armeabi-v7a",
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/png/prebuilt/android/x86,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/png/prebuilt/ios,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/png/prebuilt/mac,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/png/prebuilt/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/png/prebuilt/winrt/ARM,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/png/prebuilt/winrt/Win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/png/prebuilt/winrt_8.1/arm,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/png/prebuilt/winrt_8.1/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/png/prebuilt/wp8/ARM,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/png/prebuilt/wp8/Win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/png/prebuilt/wp_8.1/arm,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/png/prebuilt/wp_8.1/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/sqlite3/libraries/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/sqlite3/libraries/winrt_8.1/arm,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/sqlite3/libraries/winrt_8.1/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/sqlite3/libraries/wp8/arm,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/sqlite3/libraries/wp8/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/sqlite3/libraries/wp_8.1/arm,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/sqlite3/libraries/wp_8.1/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/tiff/prebuilt/android/armeabi,
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/tiff/prebuilt/android/armeabi-v7a",
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/tiff/prebuilt/android/x86,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/tiff/prebuilt/ios,
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/tiff/prebuilt/linux/32-bit",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/tiff/prebuilt/linux/64-bit",
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/tiff/prebuilt/mac,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/tiff/prebuilt/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/tiff/prebuilt/winrt/ARM,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/tiff/prebuilt/winrt/Win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/tiff/prebuilt/winrt_8.1/arm,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/tiff/prebuilt/winrt_8.1/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/tiff/prebuilt/wp8/ARM,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/tiff/prebuilt/wp8/Win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/tiff/prebuilt/wp_8.1/arm,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/tiff/prebuilt/wp_8.1/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/webp/prebuilt/android/armeabi,
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/webp/prebuilt/android/armeabi-v7a",
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/webp/prebuilt/android/x86,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/webp/prebuilt/ios,
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/webp/prebuilt/linux/32-bit",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/webp/prebuilt/linux/64-bit",
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/webp/prebuilt/mac,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/webp/prebuilt/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/websockets/prebuilt/android/armeabi,
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/websockets/prebuilt/android/armeabi-v7a",
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/websockets/prebuilt/android/x86,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/websockets/prebuilt/ios,
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/websockets/prebuilt/linux/32-bit",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/websockets/prebuilt/linux/64-bit",
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/websockets/prebuilt/mac,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/websockets/prebuilt/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/websockets/prebuilt/winrt_8.1/arm,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/websockets/prebuilt/winrt_8.1/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/websockets/prebuilt/wp8/arm,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/websockets/prebuilt/wp8/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/websockets/prebuilt/wp_8.1/arm,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/websockets/prebuilt/wp_8.1/win32,
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/win32-specific/gles/prebuilt",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/win32-specific/icon/prebuilt",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/win32-specific/MP3Decoder/prebuilt",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/win32-specific/OggDecoder/prebuilt",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/win32-specific/OpenalSoft/prebuilt",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/win32-specific/zlib/prebuilt",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/winrt-specific/angle/prebuilt/ARM",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/winrt-specific/angle/prebuilt/Win32",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/winrt-specific/zlib/prebuilt/ARM",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/winrt-specific/zlib/prebuilt/Win32",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/winrt_8.1-specific/angle/prebuilt/arm",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/winrt_8.1-specific/angle/prebuilt/win32",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/winrt_8.1-specific/zlib/prebuilt/arm",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/winrt_8.1-specific/zlib/prebuilt/win32",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/wp8-specific/angle/prebuilt/ARM",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/wp8-specific/angle/prebuilt/Win32",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/wp8-specific/zlib/prebuilt/ARM",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/wp8-specific/zlib/prebuilt/Win32",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/wp_8.1-specific/angle/prebuilt/arm",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/wp_8.1-specific/angle/prebuilt/win32",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/wp_8.1-specific/zlib/prebuilt/arm",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/wp_8.1-specific/zlib/prebuilt/win32",
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/plugin/plugins/admob/proj.ios/Admob,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/plugin/plugins/flurry/proj.ios/FlurryAds,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/plugin/plugins/flurry/proj.ios,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/plugin/plugins/umeng/proj.ios,
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/tools/fbx-conv/mac",
+				);
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "";
@@ -616,6 +915,11 @@
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/plugin/plugins/facebook/proj.ios/sdk,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/plugin/plugins/facebookads/proj.ios,
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -633,7 +937,154 @@
 					"$(SRCROOT)/../cocos2d/external/glfw3/include/mac",
 				);
 				INFOPLIST_FILE = mac/Info.plist;
-				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = (
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/chipmunk/prebuilt/android/armeabi,
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/chipmunk/prebuilt/android/armeabi-v7a",
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/chipmunk/prebuilt/android/x86,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/chipmunk/prebuilt/ios,
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/chipmunk/prebuilt/linux/32-bit",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/chipmunk/prebuilt/linux/64-bit",
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/chipmunk/prebuilt/mac,
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/chipmunk/prebuilt/win32/debug-lib",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/chipmunk/prebuilt/win32/release-lib",
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/chipmunk/prebuilt/winrt_8.1/arm,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/chipmunk/prebuilt/winrt_8.1/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/chipmunk/prebuilt/wp8/ARM,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/chipmunk/prebuilt/wp8/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/chipmunk/prebuilt/wp_8.1/arm,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/chipmunk/prebuilt/wp_8.1/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/curl/prebuilt/android/armeabi,
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/curl/prebuilt/android/armeabi-v7a",
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/curl/prebuilt/android/x86,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/curl/prebuilt/ios,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/curl/prebuilt/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/curl/prebuilt/winrt_8.1/arm,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/curl/prebuilt/winrt_8.1/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/curl/prebuilt/wp8/arm,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/curl/prebuilt/wp8/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/curl/prebuilt/wp_8.1/arm,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/curl/prebuilt/wp_8.1/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/freetype2/prebuilt/android/armeabi,
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/freetype2/prebuilt/android/armeabi-v7a",
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/freetype2/prebuilt/android/x86,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/freetype2/prebuilt/ios,
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/freetype2/prebuilt/linux/32-bit",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/freetype2/prebuilt/linux/64-bit",
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/freetype2/prebuilt/mac,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/freetype2/prebuilt/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/freetype2/prebuilt/winrt/ARM,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/freetype2/prebuilt/winrt/Win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/freetype2/prebuilt/winrt_8.1/arm,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/freetype2/prebuilt/winrt_8.1/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/freetype2/prebuilt/wp8/ARM,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/freetype2/prebuilt/wp8/Win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/freetype2/prebuilt/wp_8.1/arm,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/freetype2/prebuilt/wp_8.1/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/glfw3/prebuilt/mac,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/glfw3/prebuilt/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/jpeg/prebuilt/android/armeabi,
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/jpeg/prebuilt/android/armeabi-v7a",
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/jpeg/prebuilt/android/x86,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/jpeg/prebuilt/ios,
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/jpeg/prebuilt/linux/32-bit",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/jpeg/prebuilt/linux/64-bit",
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/jpeg/prebuilt/mac,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/jpeg/prebuilt/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/jpeg/prebuilt/winrt/ARM,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/jpeg/prebuilt/winrt/Win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/jpeg/prebuilt/winrt_8.1/arm,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/jpeg/prebuilt/winrt_8.1/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/jpeg/prebuilt/wp8/ARM,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/jpeg/prebuilt/wp8/Win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/jpeg/prebuilt/wp_8.1/arm,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/jpeg/prebuilt/wp_8.1/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/png/prebuilt/android/armeabi,
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/png/prebuilt/android/armeabi-v7a",
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/png/prebuilt/android/x86,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/png/prebuilt/ios,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/png/prebuilt/mac,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/png/prebuilt/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/png/prebuilt/winrt/ARM,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/png/prebuilt/winrt/Win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/png/prebuilt/winrt_8.1/arm,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/png/prebuilt/winrt_8.1/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/png/prebuilt/wp8/ARM,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/png/prebuilt/wp8/Win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/png/prebuilt/wp_8.1/arm,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/png/prebuilt/wp_8.1/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/sqlite3/libraries/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/sqlite3/libraries/winrt_8.1/arm,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/sqlite3/libraries/winrt_8.1/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/sqlite3/libraries/wp8/arm,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/sqlite3/libraries/wp8/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/sqlite3/libraries/wp_8.1/arm,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/sqlite3/libraries/wp_8.1/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/tiff/prebuilt/android/armeabi,
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/tiff/prebuilt/android/armeabi-v7a",
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/tiff/prebuilt/android/x86,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/tiff/prebuilt/ios,
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/tiff/prebuilt/linux/32-bit",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/tiff/prebuilt/linux/64-bit",
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/tiff/prebuilt/mac,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/tiff/prebuilt/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/tiff/prebuilt/winrt/ARM,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/tiff/prebuilt/winrt/Win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/tiff/prebuilt/winrt_8.1/arm,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/tiff/prebuilt/winrt_8.1/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/tiff/prebuilt/wp8/ARM,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/tiff/prebuilt/wp8/Win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/tiff/prebuilt/wp_8.1/arm,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/tiff/prebuilt/wp_8.1/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/webp/prebuilt/android/armeabi,
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/webp/prebuilt/android/armeabi-v7a",
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/webp/prebuilt/android/x86,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/webp/prebuilt/ios,
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/webp/prebuilt/linux/32-bit",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/webp/prebuilt/linux/64-bit",
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/webp/prebuilt/mac,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/webp/prebuilt/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/websockets/prebuilt/android/armeabi,
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/websockets/prebuilt/android/armeabi-v7a",
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/websockets/prebuilt/android/x86,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/websockets/prebuilt/ios,
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/websockets/prebuilt/linux/32-bit",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/websockets/prebuilt/linux/64-bit",
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/websockets/prebuilt/mac,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/websockets/prebuilt/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/websockets/prebuilt/winrt_8.1/arm,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/websockets/prebuilt/winrt_8.1/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/websockets/prebuilt/wp8/arm,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/websockets/prebuilt/wp8/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/websockets/prebuilt/wp_8.1/arm,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/websockets/prebuilt/wp_8.1/win32,
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/win32-specific/gles/prebuilt",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/win32-specific/icon/prebuilt",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/win32-specific/MP3Decoder/prebuilt",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/win32-specific/OggDecoder/prebuilt",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/win32-specific/OpenalSoft/prebuilt",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/win32-specific/zlib/prebuilt",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/winrt-specific/angle/prebuilt/ARM",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/winrt-specific/angle/prebuilt/Win32",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/winrt-specific/zlib/prebuilt/ARM",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/winrt-specific/zlib/prebuilt/Win32",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/winrt_8.1-specific/angle/prebuilt/arm",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/winrt_8.1-specific/angle/prebuilt/win32",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/winrt_8.1-specific/zlib/prebuilt/arm",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/winrt_8.1-specific/zlib/prebuilt/win32",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/wp8-specific/angle/prebuilt/ARM",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/wp8-specific/angle/prebuilt/Win32",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/wp8-specific/zlib/prebuilt/ARM",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/wp8-specific/zlib/prebuilt/Win32",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/wp_8.1-specific/angle/prebuilt/arm",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/wp_8.1-specific/angle/prebuilt/win32",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/wp_8.1-specific/zlib/prebuilt/arm",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/wp_8.1-specific/zlib/prebuilt/win32",
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/plugin/plugins/admob/proj.ios/Admob,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/plugin/plugins/flurry/proj.ios/FlurryAds,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/plugin/plugins/flurry/proj.ios,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/plugin/plugins/umeng/proj.ios,
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/tools/fbx-conv/mac",
+				);
 				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;
@@ -645,6 +1096,11 @@
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/plugin/plugins/facebook/proj.ios/sdk,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/plugin/plugins/facebookads/proj.ios,
+				);
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = mac/Prefix.pch;
@@ -660,7 +1116,154 @@
 					"$(SRCROOT)/../cocos2d/external/glfw3/include/mac",
 				);
 				INFOPLIST_FILE = mac/Info.plist;
-				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = (
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/chipmunk/prebuilt/android/armeabi,
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/chipmunk/prebuilt/android/armeabi-v7a",
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/chipmunk/prebuilt/android/x86,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/chipmunk/prebuilt/ios,
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/chipmunk/prebuilt/linux/32-bit",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/chipmunk/prebuilt/linux/64-bit",
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/chipmunk/prebuilt/mac,
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/chipmunk/prebuilt/win32/debug-lib",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/chipmunk/prebuilt/win32/release-lib",
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/chipmunk/prebuilt/winrt_8.1/arm,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/chipmunk/prebuilt/winrt_8.1/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/chipmunk/prebuilt/wp8/ARM,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/chipmunk/prebuilt/wp8/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/chipmunk/prebuilt/wp_8.1/arm,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/chipmunk/prebuilt/wp_8.1/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/curl/prebuilt/android/armeabi,
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/curl/prebuilt/android/armeabi-v7a",
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/curl/prebuilt/android/x86,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/curl/prebuilt/ios,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/curl/prebuilt/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/curl/prebuilt/winrt_8.1/arm,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/curl/prebuilt/winrt_8.1/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/curl/prebuilt/wp8/arm,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/curl/prebuilt/wp8/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/curl/prebuilt/wp_8.1/arm,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/curl/prebuilt/wp_8.1/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/freetype2/prebuilt/android/armeabi,
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/freetype2/prebuilt/android/armeabi-v7a",
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/freetype2/prebuilt/android/x86,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/freetype2/prebuilt/ios,
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/freetype2/prebuilt/linux/32-bit",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/freetype2/prebuilt/linux/64-bit",
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/freetype2/prebuilt/mac,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/freetype2/prebuilt/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/freetype2/prebuilt/winrt/ARM,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/freetype2/prebuilt/winrt/Win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/freetype2/prebuilt/winrt_8.1/arm,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/freetype2/prebuilt/winrt_8.1/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/freetype2/prebuilt/wp8/ARM,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/freetype2/prebuilt/wp8/Win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/freetype2/prebuilt/wp_8.1/arm,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/freetype2/prebuilt/wp_8.1/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/glfw3/prebuilt/mac,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/glfw3/prebuilt/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/jpeg/prebuilt/android/armeabi,
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/jpeg/prebuilt/android/armeabi-v7a",
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/jpeg/prebuilt/android/x86,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/jpeg/prebuilt/ios,
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/jpeg/prebuilt/linux/32-bit",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/jpeg/prebuilt/linux/64-bit",
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/jpeg/prebuilt/mac,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/jpeg/prebuilt/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/jpeg/prebuilt/winrt/ARM,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/jpeg/prebuilt/winrt/Win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/jpeg/prebuilt/winrt_8.1/arm,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/jpeg/prebuilt/winrt_8.1/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/jpeg/prebuilt/wp8/ARM,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/jpeg/prebuilt/wp8/Win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/jpeg/prebuilt/wp_8.1/arm,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/jpeg/prebuilt/wp_8.1/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/png/prebuilt/android/armeabi,
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/png/prebuilt/android/armeabi-v7a",
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/png/prebuilt/android/x86,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/png/prebuilt/ios,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/png/prebuilt/mac,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/png/prebuilt/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/png/prebuilt/winrt/ARM,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/png/prebuilt/winrt/Win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/png/prebuilt/winrt_8.1/arm,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/png/prebuilt/winrt_8.1/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/png/prebuilt/wp8/ARM,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/png/prebuilt/wp8/Win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/png/prebuilt/wp_8.1/arm,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/png/prebuilt/wp_8.1/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/sqlite3/libraries/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/sqlite3/libraries/winrt_8.1/arm,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/sqlite3/libraries/winrt_8.1/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/sqlite3/libraries/wp8/arm,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/sqlite3/libraries/wp8/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/sqlite3/libraries/wp_8.1/arm,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/sqlite3/libraries/wp_8.1/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/tiff/prebuilt/android/armeabi,
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/tiff/prebuilt/android/armeabi-v7a",
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/tiff/prebuilt/android/x86,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/tiff/prebuilt/ios,
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/tiff/prebuilt/linux/32-bit",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/tiff/prebuilt/linux/64-bit",
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/tiff/prebuilt/mac,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/tiff/prebuilt/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/tiff/prebuilt/winrt/ARM,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/tiff/prebuilt/winrt/Win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/tiff/prebuilt/winrt_8.1/arm,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/tiff/prebuilt/winrt_8.1/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/tiff/prebuilt/wp8/ARM,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/tiff/prebuilt/wp8/Win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/tiff/prebuilt/wp_8.1/arm,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/tiff/prebuilt/wp_8.1/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/webp/prebuilt/android/armeabi,
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/webp/prebuilt/android/armeabi-v7a",
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/webp/prebuilt/android/x86,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/webp/prebuilt/ios,
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/webp/prebuilt/linux/32-bit",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/webp/prebuilt/linux/64-bit",
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/webp/prebuilt/mac,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/webp/prebuilt/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/websockets/prebuilt/android/armeabi,
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/websockets/prebuilt/android/armeabi-v7a",
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/websockets/prebuilt/android/x86,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/websockets/prebuilt/ios,
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/websockets/prebuilt/linux/32-bit",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/websockets/prebuilt/linux/64-bit",
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/websockets/prebuilt/mac,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/websockets/prebuilt/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/websockets/prebuilt/winrt_8.1/arm,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/websockets/prebuilt/winrt_8.1/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/websockets/prebuilt/wp8/arm,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/websockets/prebuilt/wp8/win32,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/websockets/prebuilt/wp_8.1/arm,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/websockets/prebuilt/wp_8.1/win32,
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/win32-specific/gles/prebuilt",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/win32-specific/icon/prebuilt",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/win32-specific/MP3Decoder/prebuilt",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/win32-specific/OggDecoder/prebuilt",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/win32-specific/OpenalSoft/prebuilt",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/win32-specific/zlib/prebuilt",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/winrt-specific/angle/prebuilt/ARM",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/winrt-specific/angle/prebuilt/Win32",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/winrt-specific/zlib/prebuilt/ARM",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/winrt-specific/zlib/prebuilt/Win32",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/winrt_8.1-specific/angle/prebuilt/arm",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/winrt_8.1-specific/angle/prebuilt/win32",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/winrt_8.1-specific/zlib/prebuilt/arm",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/winrt_8.1-specific/zlib/prebuilt/win32",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/wp8-specific/angle/prebuilt/ARM",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/wp8-specific/angle/prebuilt/Win32",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/wp8-specific/zlib/prebuilt/ARM",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/wp8-specific/zlib/prebuilt/Win32",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/wp_8.1-specific/angle/prebuilt/arm",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/wp_8.1-specific/angle/prebuilt/win32",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/wp_8.1-specific/zlib/prebuilt/arm",
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/external/wp_8.1-specific/zlib/prebuilt/win32",
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/plugin/plugins/admob/proj.ios/Admob,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/plugin/plugins/flurry/proj.ios/FlurryAds,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/plugin/plugins/flurry/proj.ios,
+					/Users/pavelyevtukhov/programs/arkanoid/cocos2d/plugin/plugins/umeng/proj.ios,
+					"/Users/pavelyevtukhov/programs/arkanoid/cocos2d/tools/fbx-conv/mac",
+				);
 				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Release;
