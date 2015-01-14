@@ -12,7 +12,6 @@ public:
 	
 	virtual void draw (cocos2d::Renderer * renderer, const cocos2d::Mat4 & transform,
 					   bool transformUpdated);
-	
 	void setScore(const unsigned int score);
 private:
 	cocos2d::Label* mScoreLabel;

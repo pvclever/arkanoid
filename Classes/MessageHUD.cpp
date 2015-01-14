@@ -9,13 +9,7 @@ MessageHUD* MessageHUD::createLayer()
 {
 	MessageHUD* a = new MessageHUD();
 	a->create();
-	//a->setColor(cocos2d::Color3B(0, 0, 0));
-	
-	//a->setContentSize(cocos2d::Size::Size(1, 1));
-	//a->setAnchorPoint(cocos2d::Vec2(0, 0));
-	
 	a->initOptions();
-
 	return a;
 }
 
@@ -30,7 +24,7 @@ void MessageHUD::initOptions()
 	mScoreLabel = cocos2d::Label::create("0", "Marker Felt.ttf", 30);
 	mScoreLabel->setAnchorPoint(Vec2(0,1));
 	mScoreLabel->setColor(cocos2d::Color3B(255, 215, 0));
-	mScoreLabel->setPosition(cocos2d::Vec2(_messageLabel->getContentSize().width + 10,0));
+	mScoreLabel->setPosition(cocos2d::Vec2(_messageLabel->getContentSize().width + 10, 0));
 	addChild(mScoreLabel, 1);
 
 }
