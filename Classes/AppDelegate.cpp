@@ -36,6 +36,9 @@ bool AppDelegate::applicationDidFinishLaunching() {
     // create a scene. it's an autorelease object
     auto scene = GameScene::createScene();
     director->runWithScene(scene);
+	
+	auto console = director->getConsole();
+	console->listenOnTCP(1234);
     return true;
 }
 

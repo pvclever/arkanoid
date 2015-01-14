@@ -21,7 +21,7 @@ bool GameScene::init()
 	}
 	Size visibleSize = Director::getInstance()->getVisibleSize();
 	Vec2 origin = Director::getInstance()->getVisibleOrigin();
-	
+
 	
 	for (size_t i = 0; i<10; i++)
 	{
@@ -39,19 +39,18 @@ bool GameScene::init()
 	addChild(mVesselSprite);
 	
 	mBallSprite  = BallSprite::create();
-	mBallSprite->setPosition(Vec2(origin.x + visibleSize.width/2, mVesselSprite->getPosition().y +  mVesselSprite->getContentSize().height/2 + 100));
+	mBallSprite->setPosition(Vec2(origin.x + visibleSize.width/2, mVesselSprite->getPosition().y +  mVesselSprite->getContentSize().height/2 + 10));
 	addChild(mBallSprite);
 	
 	mListener = EventListenerTouchOneByOne::create();
-	
 	mListener->onTouchMoved = ([this](Touch* touch, Event* event){
-		
 		mVesselSprite->setTargetX(touch->getLocation().x);
 	});
 	mListener->onTouchBegan = ([this](Touch* touch, Event* event){
 		cocos2d::Vec2 p = touch->getLocation();
 		mVesselSprite->setTargetX(p.x);
 		mVesselSprite->run();
+		mBallSprite->run(); // need for the first time to start play
 		return true;
 	});
 	mListener->onTouchEnded = ([this](Touch* touch, Event* event){
@@ -60,19 +59,16 @@ bool GameScene::init()
 	
 	auto dispatcher = this->getEventDispatcher();
 	dispatcher->addEventListenerWithFixedPriority(mListener, 31);
-	mBallSprite->run();
-	this->scheduleUpdate();
-	
 	
 	mMessageHUD = MessageHUD::createLayer();
 	mMessageHUD->setPosition(Vec2(0,  origin.y + visibleSize.height));
 	addChild(mMessageHUD, 2);
 	
-	
+	scheduleUpdate();
 	return true;
 }
 
-void GameScene::update	( float 	delta)
+void GameScene::update	( float delta)
 {
 	static const Vec2 origin = Director::getInstance()->getVisibleOrigin();
 	if (mBallSprite->getPosition().y < 5){
@@ -87,7 +83,7 @@ void GameScene::update	( float 	delta)
 		button->addClickEventListener([&](Ref* pSender){
 			auto dispatcher = this->getEventDispatcher();
 			dispatcher->removeEventListener(mListener);
-			Director::getInstance()->replaceScene(GameScene::createScene());
+			Director::getInstance()->replaceScene(TransitionFlipX::create(1.0, GameScene::createScene()));
 		});
 	}
 	mBallSprite->bounceFrom(mVesselSprite->getBoundingBox());
@@ -104,14 +100,10 @@ void GameScene::checkCollisions(cocos2d::Rect aRect){
 		{
 			auto fadeOut = FadeOut::create(1.5f);
 			auto brick = (*it);
-			auto seq = Sequence::create(
-										fadeOut,
-										(CallFunc::create([=]() {
+			auto callback = CallFunc::create([=]() {
 				removeChild(brick);
-				
-			})),
-										nullptr
-										);
+			});
+			auto seq = Sequence::create(fadeOut, callback, nullptr);
 			(*it)->runAction(seq);
 			it = mBricksList.erase(it);
 			mScore++;
@@ -119,5 +111,4 @@ void GameScene::checkCollisions(cocos2d::Rect aRect){
 			return;
 		}
 	}
-	
 }
